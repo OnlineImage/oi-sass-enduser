@@ -1,3 +1,15 @@
+<div class="top-header">
+	<div class="top-header-left">
+		<a href="https://www.facebook.com/Bennion-Jewelers-114196615265107" class="social-icons"><img src="http://132.148.23.236/~bennionjewelers/wp-content/uploads/2017/04/fb.png" /></a>
+		<a href="https://www.instagram.com/bennionjewelers/" class="social-icons"><img src="http://132.148.23.236/~bennionjewelers/wp-content/uploads/2017/04/ig.png" /></a>
+	</div>
+	<div class="top-header-center address">
+		City Creek Center, 15 S Temple #120, Salt Lake City, UT 84101
+	</div>
+	<div class="top-header-right phone">
+		Call Now! (801) 364-3667
+	</div>
+</div>
 <div class="top-bar" id="top-bar-menu">
 	<div class="top-bar-left">
 		<?php if ( get_theme_mod( 'themeslug_logo' ) ) : ?>
