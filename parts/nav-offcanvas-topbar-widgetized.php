@@ -1,23 +1,26 @@
 <div class="top-header">
 	<div class="large-4 medium-4 columns">
 		<?php 
-		if (the_field('top_bar_left', 'option')) {
-			echo the_field('top_bar_left', 'option'); 
+		$top_bar_left = get_theme_mod( 'top_bar_left' );
+		if ($top_bar_left) {
+			echo $top_bar_left; 
 		}
 		?>
 	</div>
 	<div class="large-4 medium-4 columns">
 		<?php 
-		if (the_field('top_bar_center', 'option')) {
-			echo the_field('top_bar_center', 'option'); 
+		$top_bar_center = get_theme_mod( 'top_bar_center' );
+		if ($top_bar_center) {
+			echo $top_bar_center; 
 		}
 		?>
 	</div>
 	<div class="large-4 medium-4 columns">
-		<?php
-		if (the_field('top_bar_right', 'option')) {
-			echo the_field('top_bar_right', 'option'); 
-		} 
+		<?php 
+		$top_bar_right = get_theme_mod( 'top_bar_right' );
+		if ($top_bar_right) {
+			echo $top_bar_right; 
+		}
 		?>
 	</div>
 </div>
