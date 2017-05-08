@@ -3,6 +3,7 @@
   <html class="no-js"  <?php language_attributes(); ?>>
 
 	<head>
+
 		<meta charset="utf-8">
 		
 		<!-- Force IE to use the latest rendering engine available -->
@@ -29,21 +30,11 @@
 
 		<?php wp_head(); ?>
 
-		<!-- Drop Google Analytics here -->
-		<!-- end analytics -->
-
-		<!-- Start Before Head Tag ACF call -->
-		<?php
-		if (the_field('before_head_tag', 'option')) {
-			echo the_field('before_head_tag', 'option'); 
-		} 
-		?>
-		<!-- End Before Head Tag ACF call -->
 	</head>
 	
 	<!-- Uncomment this line if using the Off-Canvas Menu --> 
 		
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?> >
 
 		<div class="off-canvas-wrapper">
 			
