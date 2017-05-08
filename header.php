@@ -31,6 +31,14 @@
 
 		<!-- Drop Google Analytics here -->
 		<!-- end analytics -->
+
+		<!-- Start Before Head Tag ACF call -->
+		<?php
+		if (the_field('before_head_tag', 'option')) {
+			echo the_field('before_head_tag', 'option'); 
+		} 
+		?>
+		<!-- End Before Head Tag ACF call -->
 	</head>
 	
 	<!-- Uncomment this line if using the Off-Canvas Menu --> 
