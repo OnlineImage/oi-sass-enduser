@@ -3,6 +3,7 @@
   <html class="no-js"  <?php language_attributes(); ?>>
 
 	<head>
+
 		<meta charset="utf-8">
 		
 		<!-- Force IE to use the latest rendering engine available -->
@@ -29,13 +30,11 @@
 
 		<?php wp_head(); ?>
 
-		<!-- Drop Google Analytics here -->
-		<!-- end analytics -->
 	</head>
 	
 	<!-- Uncomment this line if using the Off-Canvas Menu --> 
 		
-	<body <?php body_class(); ?>>
+	<body <?php body_class(); ?> >
 
 		<div class="off-canvas-wrapper">
 			
