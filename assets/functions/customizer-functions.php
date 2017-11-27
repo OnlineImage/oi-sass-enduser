@@ -860,6 +860,10 @@ $wp_customize->add_control( 'footer_format', array(
 
             'right'     => 'Right Aligned',
 
+            '3-widget'  => 'Widgetized 3x',
+
+            '4-widget'  => 'Widgetized 4x',
+
         ),
 
     ) );
@@ -1286,6 +1290,56 @@ function hook_customizer_header_snippets() {
 }
 
 add_action('wp_head', 'hook_customizer_header_snippets', 121);
+
+//Register Footer Widgets
+function register_footer_widgets() {
+    register_sidebar( array(
+        'name'          => __( 'Footer Left', 'textdomain' ),
+        'id'            => 'footer-left',
+        'description'   => __( 'Widgets in this area will be shown on all posts and pages, in the left-most column of the 3x or 4x widgetized footer formats', 'textdomain' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li>',
+        'before_title'  => '<h3 class="widgettitle">',
+        'after_title'   => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name'          => __( 'Footer Middle', 'textdomain' ),
+        'id'            => 'footer-middle',
+        'description'   => __( 'Widgets in this area will be shown on all posts and pages, in the middle column of the 3x widgetized footer format', 'textdomain' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li>',
+        'before_title'  => '<h3 class="widgettitle">',
+        'after_title'   => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name'          => __( 'Footer Right', 'textdomain' ),
+        'id'            => 'footer-right',
+        'description'   => __( 'Widgets in this area will be shown on all posts and pages, in the right-most column of the 3x or 4x widgetized footer formats', 'textdomain' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li>',
+        'before_title'  => '<h3 class="widgettitle">',
+        'after_title'   => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name'          => __( 'Footer Middle Left', 'textdomain' ),
+        'id'            => 'footer-middle-left',
+        'description'   => __( 'Widgets in this area will be shown on all posts and pages, in the middle-left column of the 4x widgetized footer format', 'textdomain' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li>',
+        'before_title'  => '<h3 class="widgettitle">',
+        'after_title'   => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name'          => __( 'Footer Middle Right', 'textdomain' ),
+        'id'            => 'footer-middle-right',
+        'description'   => __( 'Widgets in this area will be shown on all posts and pages, in the middle-right column of the 4x widgetized footer format', 'textdomain' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</li>',
+        'before_title'  => '<h3 class="widgettitle">',
+        'after_title'   => '</h3>',
+    ) );
+}
+add_action( 'widgets_init', 'register_footer_widgets' );
 
 // Show/Hide Top Bar Widgetized text areas
 
