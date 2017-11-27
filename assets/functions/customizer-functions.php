@@ -572,7 +572,9 @@ $wp_customize->add_control( 'header_format', array(
 
             'offcanvas-topbar'              => 'Off Canvas Top Bar',
 
-            'boxed-plus'                    => 'Boxed Plus',
+            'boxed-plus'                    => 'Boxed Plus 1',
+
+            'boxed-plus-no-sub'             => 'Boxed Plus 2',
 
             'offcanvas-topbar-widgetized'   => 'Top Bar Widgetized',
 
