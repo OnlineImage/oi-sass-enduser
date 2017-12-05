@@ -1128,45 +1128,25 @@ $wp_customize->add_control( 'header_format', array(
 
     'choices'       => array(
 
-
-
             'title-bar'                     => 'Title Bar',
-
-
 
             'title-bar-topbar'              => 'Title Bar w/Top Bar',
 
-
-
             'offcanvas'                     => 'Off Canvas',
-
-
 
             'offcanvas-topbar'              => 'Off Canvas w/Top Bar',
 
-
-
             'boxed-plus'                    => 'Boxed Plus 1',
-
-
 
             'boxed-plus-no-sub'             => 'Boxed Plus 2',
 
-
+            'boxed-plus-widget-right'       => 'Boxed Plus Widgetized Right',
 
             'boxed-plus-topbar'             => 'Boxed Plus w/TopBar',
 
-
-
             'boxed-title-bar-topbar'        => 'Boxed Title Bar w/TopBar',
 
-
-
-
-
         ),
-
-
 
     ) );
 
