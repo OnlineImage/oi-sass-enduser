@@ -108,5 +108,19 @@ if( ! function_exists( 'wp_custom_css_add_custom_css' ) ) :
 
 	}
 
-	endif;
-	add_action( 'wp_head', 'wp_custom_css_add_custom_css', 1000 );
+endif;
+add_action( 'wp_head', 'wp_custom_css_add_custom_css', 1000 );
+
+/**
+ * Show all parents, regardless of post status.
+ *
+ * @param   array  $args  Original get_pages() $args.
+ *
+ * @return  array  $args  Args set to also include posts with pending, draft, and private status.
+ */
+function my_slug_show_all_parents( $args ) {
+    $args['post_status'] = array( 'publish', 'pending', 'draft', 'private' );
+    return $args;
+}
+add_filter( 'page_attributes_dropdown_pages_args', 'my_slug_show_all_parents' );
+add_filter( 'quick_edit_dropdown_pages_args', 'my_slug_show_all_parents' );
