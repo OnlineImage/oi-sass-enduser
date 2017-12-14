@@ -337,11 +337,13 @@ $wp_customize->add_control( 'header_format', array(
             'title-bar-topbar'              => 'Title Bar w/Top Bar',
             'offcanvas'                     => 'Off Canvas',
             'offcanvas-topbar'              => 'Off Canvas w/Top Bar',
+            'boxed-offcanvas'               => 'Boxed Off Canvas',
+            'boxed-offcanvas-topbar'        => 'Boxed Off Canvas w/Top Bar',
             'boxed-plus'                    => 'Boxed Plus 1',
             'boxed-plus-no-sub'             => 'Boxed Plus 2',
             'boxed-plus-widget-right'       => 'Boxed Plus Widgetized Right',
-            'boxed-plus-topbar'             => 'Boxed Plus w/TopBar',
-            'boxed-title-bar-topbar'        => 'Boxed Title Bar w/TopBar',
+            'boxed-plus-topbar'             => 'Boxed Plus w/Top Bar',
+            'boxed-title-bar-topbar'        => 'Boxed Title Bar w/Top Bar',
         ),
     ) );
 
