@@ -19,9 +19,9 @@ Mixins & Constants.
 /*********************
 TOOLS
 *********************/
-@import url(http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css);
+@import url(//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css);
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic);
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(//fonts.googleapis.com/css?family=Lato:300,400,700);
 .image-replacement {
   text-indent: 100%;
   white-space: nowrap;
@@ -1924,14 +1924,6 @@ textarea {
   max-width: 100%; }
   textarea[rows] {
     height: auto; }
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: #cacaca; }
-
-input::-moz-placeholder,
-textarea::-moz-placeholder {
-  color: #cacaca; }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
@@ -4315,20 +4307,11 @@ Stylesheet: Custom Stylesheet
     #featured-hero {
       height: 30rem; } }
 
-.sub-header-phone,
-.sub-header-email {
-  display: inline;
-  margin-left: 10px; }
-
-.sub-header {
-  text-align: right;
-  padding: 10px 0; }
-
-.header-logo-bar {
-  padding: 10px 0; }
+.copyright {
+  font-size: 14px; }
 
 .footer {
-  padding: 10px 0; }
+  padding: 40px 0; }
 
 /************************************************
 Stylesheet: Media Queries
